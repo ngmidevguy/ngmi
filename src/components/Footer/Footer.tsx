@@ -12,7 +12,8 @@ const FooterInner = styled.footer`
 const FooterText = styled.p`
   font-family: ${garamond.className};
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 16px;
+  line-height: 1.5;
 `
 
 const Footer = () => {

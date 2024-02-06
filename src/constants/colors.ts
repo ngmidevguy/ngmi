@@ -9,7 +9,7 @@ export const light = {
     'accent_3': '#E74C3C'
   },
   'images': {
-    'background': '/img/ngmi_light.png'
+    'background': '/img/ngmi_dark.svg'
   }
 }; 
 
@@ -23,7 +23,7 @@ export const dark = {
     'accent_3': '#E74C3C'
   },
   'images': {
-    'background': '/img/ngmi_dark.png'
+    'background': '/img/ngmi_light.svg'
   }
 };
 

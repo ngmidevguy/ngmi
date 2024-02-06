@@ -5,12 +5,13 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import styled from 'styled-components'
 
 import ThemeToggleButton from '@/components/ThemeToggle/ThemeToggle';
+import Link from 'next/link';
 
 const HeaderInner = styled.header`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 96px;
 `
 
 const Logo = styled.div`
@@ -39,8 +40,9 @@ const Nav = styled.nav`
 const Header = () => {
   return (
     <HeaderInner>
-      <Logo />
+      <Link href='/'><Logo /></Link>
       <Nav id="icons">
+        <Link href='/links'>Links</Link>
         <a href="https://twitter.com/ngmidevguy" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} style={{ fontSize: '24px' }} /></a>
         <ThemeToggleButton />
       </Nav>

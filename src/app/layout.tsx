@@ -66,9 +66,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <body>
         <StyledComponentsRegistry>
-          <Header></Header>
+          <Header />
           {children}
-          <Footer></Footer>
+          <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>
