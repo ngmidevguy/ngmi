@@ -2,12 +2,13 @@
 
 import { useEffect } from 'react'
 import { displace_kc, garamond } from '@/constants/fonts';
+import { sizes } from '@/constants/breakpoints'
 import styled from 'styled-components';
 
 const ErrorButton = styled.button`
   font-family: ${garamond.className};
   font-weight: 700;
-  font-size: 16px;
+  font-size: ${sizes.sm};
   line-height: 1.5;
   padding: 8px 16px;
   border-radius: 8px;

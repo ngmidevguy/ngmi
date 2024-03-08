@@ -1,5 +1,6 @@
 import { createGlobalStyle, keyframes } from 'styled-components';
-import { dark } from '@/colors';
+import { dark } from '@/constants/themes';
+import { sizes, breakpoints } from '@/constants/breakpoints';
 
 // todo, make these unique per components, usage below
 const spin = keyframes`
@@ -46,11 +47,6 @@ const bounce = keyframes`
 // animation: ${bounce} 2s linear infinite;
 
 export const GlobalStyles = createGlobalStyle`
-  a:link, a:visited, a:hover, a:active {
-    color: ${props => props.theme.main.primary};
-    text-decoration: none;
-  }
-
   .animate-spin {
     animation: spin 1s linear infinite;
   }
@@ -68,9 +64,43 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    padding: 0px 100px;
     color: ${props => props.theme.main.primary};
     background: ${props => props.theme.main.background};
-    font-family: 'EB Garamond', serif;
+  }
+
+  @media ${breakpoints.sm} {
+    body {
+      padding: 0px ${sizes.sm};
+    }
+  }
+
+  @media ${breakpoints.md} {
+    body {
+      padding: ${sizes.md} ${sizes.sm};
+    }
+  }
+
+  @media ${breakpoints.lg} {
+    body {
+      padding: ${sizes.lg} ${sizes.md};
+    }
+  }
+
+  @media ${breakpoints.xl} {
+    body{
+      padding: ${sizes.xl} ${sizes.lg};
+    }
+  }
+
+  @media ${breakpoints.xxl} {
+    body{
+      padding: ${sizes.xxl} ${sizes.xl};
+    }
+  }
+
+  @media ${breakpoints.xxxl} {
+    body {
+      padding: ${sizes.xxxl} ${sizes.xxl};
+    }
   }
 `; 

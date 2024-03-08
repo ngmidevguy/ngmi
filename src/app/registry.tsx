@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 import { useServerInsertedHTML } from 'next/navigation'
 import { ServerStyleSheet, StyleSheetManager, ThemeProvider as StyledThemeProvider } from 'styled-components'
 import { ThemeProvider, ThemeContext } from '@/contexts/ThemeContext'
-import { GlobalStyles } from '@/styles';
-import { themes } from '@/colors';
+import { GlobalStyles } from '@/constants/styles';
+import { themes } from '@/constants/themes';
 
 export default function StyledComponentsRegistry({ children }: { children: React.ReactNode }) {
   // Only create stylesheet once with lazy initial state

@@ -2,6 +2,7 @@
 
 export const light = {
   'main': {
+    'name': 'light',
     'primary': '#1F2122',
     'background': '#F2F2F2',
     'accent': '#2980B9',
@@ -11,11 +12,12 @@ export const light = {
   'images': {
     'background': '/img/ngmi_dark.svg'
   }
-}; 
+};
 
 // Dark Mode Colors
 export const dark = {
   'main': {
+    'name': 'dark',
     'primary': '#CECAC3',
     'background': '#1F2122',
     'accent': '#2980B9',

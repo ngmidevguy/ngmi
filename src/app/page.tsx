@@ -2,7 +2,7 @@
 import PostHogClient from './posthog';
 import { BlogCard } from '@/components'
 
-const Home = async () => {
+const Home = () => {
 
   // const posthog = PostHogClient();
 
@@ -16,8 +16,19 @@ const Home = async () => {
   // await posthog.shutdownAsync()
 
   return (
-    <div style={{ paddingTop: '60px', marginBottom: '60px' }}>
-      <BlogCard date="october 17, 2023" href="#" image="/img/300zx.jpg" title="This Blog is Sick Bro" tags={["hi", "nextjs", "typescript"]}/>
+    <div>
+      <BlogCard 
+        date="october 17, 2023" 
+        href="#" image="/img/300zx.jpg" 
+        title="Making this blog with TypeScript, Next.JS App Router, and Styled-Components" 
+        tags={["hi", "nextjs", "typescript"]}
+      />
+      <BlogCard 
+        date="january 1, 2022" 
+        href="#" image="https://i.pinimg.com/564x/a9/cf/e4/a9cfe49c439c5a6df72b73ea11f60e30.jpg" 
+        title="Sheck Wes Need A Rari A Lambo" 
+        tags={["cactusjack", "rapmusic", "nextup"]}
+      />
     </div>
   );
 }

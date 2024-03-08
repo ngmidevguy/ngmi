@@ -7,10 +7,9 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "esnext",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "outDir": ".next/",
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -23,10 +22,6 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/colors": ["./src/constants/colors"],
-      "@/fonts": ["./src/constants/fonts"],
-      "@/styles": ["./src/constants/styles"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
