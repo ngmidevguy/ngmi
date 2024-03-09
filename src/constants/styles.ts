@@ -69,38 +69,20 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @media ${breakpoints.sm} {
-    body {
-      padding: 0px ${sizes.sm};
-    }
   }
 
   @media ${breakpoints.md} {
-    body {
-      padding: ${sizes.md} ${sizes.sm};
-    }
   }
 
   @media ${breakpoints.lg} {
-    body {
-      padding: ${sizes.lg} ${sizes.md};
-    }
   }
 
   @media ${breakpoints.xl} {
-    body{
-      padding: ${sizes.xl} ${sizes.lg};
-    }
   }
 
   @media ${breakpoints.xxl} {
-    body{
-      padding: ${sizes.xxl} ${sizes.xl};
-    }
   }
 
   @media ${breakpoints.xxxl} {
-    body {
-      padding: ${sizes.xxxl} ${sizes.xxl};
-    }
   }
 `; 

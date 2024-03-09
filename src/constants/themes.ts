@@ -1,5 +1,4 @@
 // Light Mode Colors
-
 export const light = {
   'main': {
     'name': 'light',

@@ -84,7 +84,9 @@ Nav.defaultProps = {
 
 const Header = () => {
   return (
-    <HeaderInner>
+    <HeaderInner style={{
+      padding: '20px 100px 20px 100px',
+    }}>
       <Link href='/'><Logo /></Link>
       <Nav id="icons">
         <Link href='/links'>Links</Link>
